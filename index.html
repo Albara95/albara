@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الشيخ عبد الله الهتاري الصوتية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>الشيخ عبد الله الهتاري</h1>
+        <div class="social-links">
+            <a href="https://youtube.com/@abdullahalhetari100?si=X7CEI7-ZHA1ZyTv5" target="_blank">
+                <img src="./1491580651-yumminkysocialmedia28_83061.ico" alt="يوتيوب">
+            </a>
+            <a href="https://t.me/ss80ss90" target="_blank">
+                <img src="./telegram_icon-icons.com_72055.ico" alt="تليجرام">
+            </a>
+            <a href="https://chat.whatsapp.com/Ecqot78somuECt5LdolPTN" target="_blank">
+                <img src="./whatsapp_socialnetwork_17360.ico" alt="واتس آب">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="book-list">
+            <button onclick="showLessons('tilawat')" class="book">
+                <img src="./IMG_20241026_192812.jpg" alt="تلاوات">
+                <div class="book-title">تلاوات</div>
+            </button>
+            <button onclick="showLessons('khawatir')" class="book">
+                <img src="bulugh.jpg" alt="خواطر">
+                <div class="book-title">خواطر</div>
+            </button>
+            <button onclick="showLessons('kitabAlTauhid')" class="book">
+                <img src="kitabAlTauhid.jpg" alt="خطب نصية">
+                <div class="book-title">خطب نصية</div>
+            </button>
+            <button onclick="showLessons('nawawi')" class="book">
+                <img src="nawawi.jpg" alt="خطب يوتيوب">
+                <div class="book-title">خطب يوتيوب</div>
+            </button>
+        </div>
+        <div id="lessons" class="lessons"></div>
+        <div id="lessonText" class="lesson-text" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
